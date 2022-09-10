@@ -21,13 +21,31 @@ const Home: NextPage = () => {
               while in school.
             </p>
           </div>
-          {games.map((game) => (
-            <div className="px-6 flex grids grid-cols-4 gap-4">
-              <div className="w-96 h-64 bg-gray-800">
-                <h1>{game.title}</h1>
+          <div className="py-6 md:flex justify-center grids lg:grid-cols-4">
+            {games.map((game) => (
+              <div className="ml-3 mr-4 w-96 h-64 bg-gray-800 rounded-lg">
+                <img
+                  src={game.image}
+                  alt={game.id}
+                  className="h-32 w-full"
+                ></img>
+
+                <div className="flex">
+                  <h1 className="mt-3 ml-5 text-white text-3xl font-bold">
+                    {game.title}
+                  </h1>
+                  <p className="mt-7 ml-2 bg-orange-500 text-orange-100 w-16 h-4 text-center text-xs rounded-lg shadow">
+                    Fun
+                  </p>
+                </div>
+
+                <p className="ml-5 text-gray-400">{game.description}</p>
+                <button className="ml-5 mt-2 w-32 h-8 text-bold text-white text-sm bg-blue-600 rounded-lg shadow">
+                  Play Now
+                </button>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </main>
 
