@@ -1,0 +1,12 @@
+{
+  "games": [
+    {
+      "title": "Pong",
+      "description": "A simple Pong game!",
+      "image": "https://image.winudf.com/v2/image1/Y29tLmdhenphcHBlcmdhbWVzLmNsYXNzaWNhbHBvbmdfc2NyZWVuXzJfMTU2MjQwMjU3MF8wMDQ/screen-2.jpg?fakeurl=1&type=.webp",
+      "type": "Fun",
+      "author": "Unblockgames",
+      "id": "pong"
+    }
+  ]
+}
