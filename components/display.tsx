@@ -1,8 +1,6 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import { PlayIcon } from "@heroicons/react/24/solid";
-import BarLoader from "react-spinners/BarLoader";
 import { useEffect, useState } from "react";
+import BarLoader from "react-spinners/BarLoader";
 
 export default function Display(props: any) {
   const [loading, setLoading] = useState(true);
@@ -10,7 +8,7 @@ export default function Display(props: any) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   });
 
   return (
@@ -40,9 +38,7 @@ export default function Display(props: any) {
                 speedMultiplier={1.5}
               />
             ) : (
-              <>
-                {props.children}
-              </>
+              <>{props.children}</>
             )}
           </div>
         </div>
@@ -60,4 +56,4 @@ export default function Display(props: any) {
       </footer>
     </>
   );
-};
+}
