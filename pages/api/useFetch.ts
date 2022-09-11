@@ -12,7 +12,7 @@ const useFetch = (url: any) => {
       fetch(url, { signal: abortCont.signal })
       .then(res => {
         if (!res.ok) { // error coming back from server
-          throw Error("Sorry, but we can''t find this game anywhere.");
+          throw Error("Sorry, but we can't find this game anywhere.");
         } 
         return res.json();
       })

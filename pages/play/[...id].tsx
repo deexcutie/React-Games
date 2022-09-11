@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Display>
-        {error && <div>{error}</div>}
+        {error && <div className="flex justify-center text-white font-bold text-xl">{error}</div>}
         {isPending && (
           <div className="flex justify-center">
             <BarLoader

@@ -19,14 +19,14 @@ const Home: NextPage = () => {
                 <img
                   src={game.image}
                   alt={game.title}
-                  className="h-32 w-full hover:opacity-60 cursor-pointer"
+                  className="h-32 w-full hover:opacity-60"
                 ></img>
                 <h1 className="mt-3 ml-5 text-white text-3xl font-bold">
                   {game.title}
                 </h1>
                 {/* <p className="mt-7 ml-2 bg-blue-500 text-orange-100 w-auto h-4 text-center text-xs rounded-sm shadow">
-                {game.author}
-              </p> */}
+                      {game.author}
+                    </p> */}
 
                 <p className="block ml-5 text-gray-400">{game.description}</p>
                 <button
