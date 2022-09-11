@@ -8,7 +8,7 @@ export default function Display(props: any) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 500);
   });
 
   return (
