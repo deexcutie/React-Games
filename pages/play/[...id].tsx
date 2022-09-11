@@ -19,15 +19,17 @@ const Home: NextPage = () => {
       <Display>
         {error && <div>{error}</div>}
         {isPending && (
-          <BarLoader
-            className=""
-            color={"#123abc"}
-            loading={isPending}
-            speedMultiplier={1.5}
-          />
+          <div className="flex justify-center">
+            <BarLoader
+              className=""
+              color={"#123abc"}
+              loading={isPending}
+              speedMultiplier={1.5}
+            />
+          </div>
         )}
         {game && (
-          <div className="flex items-center justify-center">
+          <div className="flex justify-center">
             <Iframe
               url={game.iframe}
               width="1000px"

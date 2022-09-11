@@ -8,20 +8,20 @@ export default function Display(props: any) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 2000);
   });
 
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>React-Games</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <div className="bg-gray-900 h-screen w-screen">
+      <main className="bg-gray-900">
+        <div className="h-full w-full">
           <div className="py-10 container mx-auto">
-            <h1 className="text-center text-6xl font-bold text-blue-800 ">
+            <h1 className="text-center text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-900 ">
               React-Games
             </h1>
             <p className="text-center text-xl font-medium text-gray-400">
@@ -29,16 +29,20 @@ export default function Display(props: any) {
               while at school.
             </p>
           </div>
-          <div className="py-6 md:flex justify-center grids lg:grid-cols-4 place-items-center ">
+          <div className="py-6">
             {loading ? (
-              <BarLoader
-                className=""
-                color={"#123abc"}
-                loading={loading}
-                speedMultiplier={1.5}
-              />
+              <div className="flex justify-center">
+                <BarLoader
+                  className=""
+                  color={"#123abc"}
+                  loading={loading}
+                  speedMultiplier={1.5}
+                />
+              </div>
             ) : (
-              <>{props.children}</>
+              <>
+              {props.children}
+              </>
             )}
           </div>
         </div>

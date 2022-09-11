@@ -12,7 +12,7 @@ const useFetch = (url: any) => {
       fetch(url, { signal: abortCont.signal })
       .then(res => {
         if (!res.ok) { // error coming back from server
-          throw Error('could not fetch the data for that resource');
+          throw Error("Sorry, but we can''t find this game anywhere.");
         } 
         return res.json();
       })
@@ -23,7 +23,7 @@ const useFetch = (url: any) => {
       })
       .catch(err => {
         if (err.name === 'AbortError') {
-          console.log('fetch aborted')
+          console.log('Game fetching aborted.')
         } else {
           // auto catches network / connection error
           setIsPending(false);

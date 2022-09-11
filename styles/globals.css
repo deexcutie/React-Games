@@ -241,3 +241,7 @@
       url("/fonts/source-sans-pro-v21-latin-900italic.svg#SourceSansPro")
       format("svg"); /* Legacy iOS */
 }
+
+body {
+  background-color: #111827;
+}
