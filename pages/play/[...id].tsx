@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     data: game,
     error,
     isPending,
-  } = useFetch("https://my-json-server.typicode.com/adreaisbad/React-Games/db" + gameID);
+  } = useFetch("https://mockend.com/adreaisbad/React-Games/games/" + gameID);
 
   return (
     <>
