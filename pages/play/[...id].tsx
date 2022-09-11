@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     data: game,
     error,
     isPending,
-  } = useFetch("https://mockend.com/adreaisbad/React-Games/games/" + gameID);
+  } = useFetch("https://dxqt-games.herokuapp.com/games/" + gameID);
 
   return (
     <>
