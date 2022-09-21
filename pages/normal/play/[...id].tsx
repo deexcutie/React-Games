@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import Iframe from "react-iframe";
 import BarLoader from "react-spinners/BarLoader";
-import Display from "../../components/display";
-import useFetch from "../api/useFetch";
+import Display from "../../../components/display";
+import useFetch from "../../api/useFetch";
 
 const Home: NextPage = () => {
   const router = useRouter();

@@ -1,9 +1,10 @@
 import { PlayIcon } from "@heroicons/react/24/solid";
 import type { NextPage } from "next";
+import Display from "../components/display";
+import { games } from "./data/emulated_games.json";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Display from "../components/display";
-import { games } from "./data/games.json";
+
 const Home: NextPage = () => {
   const router = useRouter();
   const [query, setQuery] = useState("");
@@ -18,8 +19,9 @@ const Home: NextPage = () => {
               id="header-search"
               placeholder="Search..."
               name="s"
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={e => setQuery(e.target.value)}
               className="mb-7 focus:outline-none rounded-lg bg-gray-800 text-white py-2 px-3 w-72"
+              
             />
           </div>
         </form>
