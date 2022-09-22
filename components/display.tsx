@@ -33,6 +33,12 @@ export default function Display(props: any) {
             </a>
           </Link>
 
+          <Link href="/flash">
+            <a className="text-white hover:text-blue-600 transition duration-300">
+              Flash
+            </a>
+          </Link>
+
           <Link href="/emulators">
             <a className="text-white hover:text-blue-600 transition duration-300">
               Emulators
@@ -57,12 +63,12 @@ export default function Display(props: any) {
           >
             Discord
           </a>
-          <a
-            href="#"
-            className="text-white hover:text-blue-600 transition duration-300"
-          >
-            Legal
-          </a>
+
+          <Link href="/legal">
+            <a className="text-white hover:text-blue-600 transition duration-300">
+              Legal
+            </a>
+          </Link>
         </div>
       </nav>
       <main className="bg-gray-900">
