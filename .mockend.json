@@ -1,12 +1,12 @@
 {
   "Games": {
-    {
-      "title": "Pong",
+    "Pong": [
       "description": "Pong is a table tennis–themed twitch arcade sports video game.",
       "image": "https://image.winudf.com/v2/image1/Y29tLmdhenphcHBlcmdhbWVzLmNsYXNzaWNhbHBvbmdfc2NyZWVuXzJfMTU2MjQwMjU3MF8wMDQ/screen-2.jpg?fakeurl=1&type=.webp",
       "iframe": "https://unblockedgames.csfg4.repl.co/pong.html",
       "disabled": false,
       "author": "Unblockgames",
       "id": "pong"
-    },
+    ]
+  }
 }
